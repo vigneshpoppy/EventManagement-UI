@@ -1,0 +1,27 @@
+.navcont{
+    display: flex;
+    flex-direction: row;justify-content: space-evenly;
+    background-color: black;
+    padding-bottom: 5px;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.navcont>button{
+    background-color: transparent;
+    color: white;
+    width: 269px;
+    padding: 15px;
+    /* margin: 10px; 
+    */
+    border: none;
+
+}
+.navcont>button:hover{
+    background-color: rgb(98, 161, 34);
+    transition:ease-in-out;
+    transition-duration: 0.5s;
+  
+}

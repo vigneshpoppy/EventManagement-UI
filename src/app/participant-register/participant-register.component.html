@@ -1,0 +1,163 @@
+<!-- <div>
+    <h1>Participant-Login</h1>
+    <form #regisform="ngForm" (ngSubmit)=" ValidateRegistration(regisform.value)" novalidate>
+      
+      
+        <div class="form-group">
+        <label>Enter Email</label>
+        <input type="text" name="email" #email="ngModel" ngModel required/>
+        <div class="er" *ngIf="regisform.submitted &&  email.invalid" > 
+            <div class="er"*ngIf="email.errors?.required"> Email Name is required</div>
+        </div>
+    </div>
+
+        <br/>
+        <div class="form-group">
+        <label>Enter Password</label>
+        <input type="text" name="pwd" #pwd="ngModel" ngModel minlength="6" required/>
+        <div class="er" *ngIf="regisform.submitted &&  pwd.invalid" > 
+            <div class="er" *ngIf="pwd.errors?.required"> Password is required</div>
+        </div>
+        <div *ngIf="pwd.errors?.minlength">
+            Name must be at least 6 characters long.
+          </div>
+
+    </div>
+    <br/>
+    <div class="form-group">
+    <label>Enter confirm Password</label>
+    <input type="text" name="cpwd" #cpwd="ngModel" ngModel minlength="6" required/>
+    <div class="er" *ngIf="regisform.submitted &&  cpwd.invalid" > 
+        <div class="er" *ngIf="cpwd.errors?.required"> Password is required</div>
+    </div>
+    <div *ngIf="cpwd.errors?.minlength">
+        Name must be at least 6 characters long.
+      </div>
+
+</div>
+<br>
+<div class="form-group">
+    <label>Enter name</label>
+    <input type="text" name="name" #name="ngModel" ngModel required/>
+    <div class="er" *ngIf="regisform.submitted &&  name.invalid" > 
+        <div class="er"*ngIf="name.errors?.required"> name is required</div>
+    </div>
+</div>
+<br>
+<div class="form-group">
+    <label>Enter City</label>
+    <input type="text" name="city" #city="ngModel" ngModel required/>
+    <div class="er" *ngIf="regisform.submitted &&  city.invalid" > 
+        <div class="er"*ngIf="city.errors?.required"> city is required</div>
+    </div>
+</div>
+<br>
+<div class="form-group">
+    <label>Enter Contactnumber</label>
+    <input type="text" name="contactnumber" #contactnumber="ngModel" ngModel required/>
+    <div class="er" *ngIf="regisform.submitted &&  contactnumber.invalid" > 
+        <div class="er"*ngIf="contactnumber.errors?.required"> city is required</div>
+    </div>
+</div>
+<br>
+<div class="form-group">
+    <label>Gender</label>
+    <select name="gender" #gender="ngModel" ngModel required>
+        <option>Male</option>
+        <option>female</option>
+    </select>
+    <--<input type="text" name="contactnumber" #contactnumber="ngModel" ngModel required/>
+    <div class="er" *ngIf="regisform.submitted &&  contactnumber.invalid" > 
+        <div class="er"*ngIf="contactnumber.errors?.required"> city is required</div>
+    </div> -->
+<!-- </div>
+        
+        <br/>
+         <div class="form-group">
+        <input type="submit" class="btn btn-primary" value="login" name="reg"/>
+
+    </div>
+
+
+    </form> -->
+<div class="main">
+    <div class="container">
+     
+                  <div  class="cardbody">
+                    <h5 class="card-title text-center"> Participant Registration</h5>
+                    <form class="form-signin" #regisform="ngForm" (ngSubmit)=" ValidateRegistration(regisform.value)" novalidate >
+                        <div >
+                            <label class="label">Enter UserID</label>
+                            <input class="ip" type="text" name="email" #email="ngModel" ngModel required/>
+                            <div class="er" *ngIf="regisform.submitted &&  email.invalid" > 
+                                <div class="er"*ngIf="email.errors?.required"> Email Name is required</div>
+                            </div>
+                        </div>
+                
+                       
+                        <div >
+                        <label class="label">Enter Password</label>
+                        <input class="ip" type="text" name="pwd" #pwd="ngModel" ngModel minlength="6" required/>
+                        <div class="er" *ngIf="regisform.submitted &&  pwd.invalid" > 
+                            <div class="er" *ngIf="pwd.errors?.required"> Password is required</div>
+                        </div>
+                        <div *ngIf="pwd.errors?.minlength">
+                            Name must be at least 6 characters long.
+                          </div>
+                
+                    </div>
+                    <div class="form-group">
+                        <label class="label">Enter confirm Password</label>
+                        <input class="ip" type="text" name="cpwd" #cpwd="ngModel" ngModel minlength="6" required/>
+                        <div class="er" *ngIf="regisform.submitted &&  cpwd.invalid" > 
+                            <div class="er" *ngIf="cpwd.errors?.required"> Password is required</div>
+                        </div>
+                        <div *ngIf="cpwd.errors?.minlength">
+                            Name must be at least 6 characters long.
+                          </div>
+                    
+                    </div>
+                   
+<div class="form-group">
+    <label class="label">Enter name</label>
+    <input class="ip" type="text" name="name" #name="ngModel" ngModel required/>
+    <div class="er" *ngIf="regisform.submitted &&  name.invalid" > 
+        <div class="er"*ngIf="name.errors?.required"> name is required</div>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="label">Enter City</label>
+    <input class="ip" type="text" name="city" #city="ngModel" ngModel required/>
+    <div class="er" *ngIf="regisform.submitted &&  city.invalid" > 
+        <div class="er"*ngIf="city.errors?.required"> city is required</div>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="label">Enter Contactnumber</label>
+    <input class="ip" type="text" name="contactnumber" #contactnumber="ngModel" [(ngModel)]="cnumber"  ngModel required/>
+    <div class="er" *ngIf="regisform.submitted &&  contactnumber.invalid" > 
+        <div class="er"*ngIf="contactnumber.errors?.required"> Contactnumber is required</div>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="label">Gender</label>
+    <select class="ip" name="gender" #gender="ngModel" ngModel required>
+        <option>select</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Others</option>
+    </select>
+    </div> 
+  
+            <div class="form-group">
+        <input type="submit" class="btn" class="btn btn-primary" value="Register" name="reg"/>
+
+        </div>
+
+    
+    </form>
+    </div>
+</div>

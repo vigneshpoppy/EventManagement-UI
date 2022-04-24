@@ -1,0 +1,27 @@
+<!-- <p>updatespeaker works!</p> -->
+<label>Enter Speaker Id</label>
+<input type="text" name="speakeremailid" [(ngModel)]="speakeremailid">
+<button (click)="search()" >search</button>
+<hr style="width: 1300px;">
+<div class="card">
+    <h4>Update Speaker</h4>
+<form #addspeaker="ngForm" (ngSubmit)="savechanges(addspeaker.value)">
+    <label>Enter Speaker ID</label> 
+        <input type="text" name="speakeremailid" ngModel  [(ngModel)]="speakeremailid"/>
+            <br/>
+        <label> Enter SpeakerName </label>
+        <input type="text" name="name" ngModel [(ngModel)]="name" />
+        <br/>
+        <label>Enter Password: </label>
+        <input type="text"  name="password"  ngModel [(ngModel)]="password"/>
+        <br/>
+        <label>Enter Skills: </label>
+        <input type="text"  name="skills"  ngModel [(ngModel)]="skills"/>
+        <br/>
+        <label>Enter contactnumber: </label>
+        <input type="text"  name="contactnumber"  ngModel [(ngModel)]="contactnumber"/>
+        <br>
+
+      <button type="submit" class="btn-success">Update Speaker</button>
+        </form>
+    </div>

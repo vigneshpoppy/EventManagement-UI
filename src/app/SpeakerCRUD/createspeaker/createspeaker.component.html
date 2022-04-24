@@ -1,0 +1,24 @@
+<!-- <p>createspeaker works!</p> -->
+<h2></h2>
+<div class="card">
+    <h3>Create Speaker</h3>
+<form #addSpeaker="ngForm" (ngSubmit)="add(addSpeaker.value)">
+    <label>Enter Speaker ID</label>
+        <input type="text" name="speakerid" ngModel [(ngModel)]="speakerid"/>
+            <br/>
+        <label> Enter Password </label>
+        <input type="text" name="pwd" ngModel [(ngModel)]="pwd"/>
+        <br/>
+        <label>Enter Speaker Name: </label>
+        <input type="text"  name="speakername" ngModel [(ngModel)]="speakername" />
+        <br/>
+        <label>Speaker skills: </label>
+        <input type="text"  name="speakerskills"  ngModel />
+        <br/>
+        <label>Enter Speaker Contact Number: </label>
+        <input type="text"  name="contactnum" ngModel />
+        <br/>
+
+        <input type="submit"class="btn-primary" value="Add Speaker"  />
+        </form>
+    </div>

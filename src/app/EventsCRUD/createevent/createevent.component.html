@@ -1,0 +1,41 @@
+<!-- <p>createevent works!</p> -->
+<div class="card">
+  <h4>Create-Event</h4>
+  <hr>
+<form #addevent="ngForm" (ngSubmit)="add(addevent.value)">
+
+    <label>Enter Event ID</label>
+        <input type="text" name="eventid" ngModel  [(ngModel)]="eventid" required/>
+            <br/>
+        <label> Enter EventName </label>
+        <input  type="text" name="name" ngModel [(ngModel)]="name"  required/>
+        <br/>
+        <label>Enter  Date: </label>
+       
+        <input type="date"  name="date" ngModel [(ngModel)]="date" required/>
+        <br/>
+        <label>Location: </label>
+        <input type="text"  name="location"  ngModel [(ngModel)]="location" required/>
+        <br/>
+        <label>Duration: </label>
+        <input type="text"  name="duration"  ngModel [(ngModel)]="duration" required/>
+        <br/>
+        <label>Amount: </label>
+        <input type="number"  name="amount"  ngModel [(ngModel)]="amount" required/>
+        <br/>
+        <label>Description: </label>
+        <input type="text"  name="description"  ngModel [(ngModel)]="description" required/>
+        <br/>
+        <label>Speaker id: </label>
+        <input type="text"  name="speakerid"  ngModel [(ngModel)]="speakerid" required/>
+        <br/>
+        <label>Speaker Name: </label>
+        <input type="text"  name="speakername"  ngModel [(ngModel)]="speakername"/>
+        <br/>
+        <label>Enter Contact Number: </label>
+        <input type="text"  name="contactnumber" ngModel [(ngModel)]="contactnumber" required/>
+        <br/>
+
+      <button type="submit"class="btn" class="btn btn-success">Add Event</button>
+        </form>
+      </div>

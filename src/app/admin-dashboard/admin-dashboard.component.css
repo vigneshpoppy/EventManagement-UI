@@ -1,0 +1,47 @@
+.navcont{
+    display: flex;
+    flex-direction: row;justify-content: space-evenly;
+    background-color: black;
+    padding-bottom: 5px;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.navcont>button{
+    background-color: transparent;
+    color: white;
+    width: 269px;
+    padding: 15px;
+    /* margin: 10px; 
+    */
+    border: none;
+
+}
+.navcont>button:hover{
+    background-color: rgb(98, 161, 34);
+    transition:ease-in-out;
+    transition-duration: 0.5s;
+  
+}
+.ip{
+    border-radius: 8px;
+    border: 1.5px solid black;
+}
+.ip:focus{
+background-color: rgb(241, 241, 237);
+}
+.label{
+   margin-left: 10px;
+   margin-right: 10px;
+}
+.btn{
+    margin-bottom: 5px;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+canvas{
+    border: 1px solid black;
+    color: black;
+}

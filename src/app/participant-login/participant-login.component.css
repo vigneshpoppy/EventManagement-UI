@@ -1,0 +1,61 @@
+label{
+    color:black;
+    padding: 5px;
+    margin: 15px;
+  font-weight: bold;
+  font-family: sans-serif;
+
+}
+.label1{
+    color:black;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 25px;
+    
+}
+.btn{
+    border-radius: 5px;
+    width: 100px;
+    margin-left: 150px;
+
+}
+.btn1{
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-left: 125px;
+}
+.ip{
+    border-radius: 8px;
+    border: 1.5px solid black;
+}
+.ip:focus{
+background-color: rgb(241, 241, 237);
+}
+.card-body{
+    box-shadow: 2px 5px 7px 6px rgb(194, 192, 192);
+}
+
+.main{
+    
+    background-image: url(https://www.socialtables.com/wp-content/uploads/2019/06/Desk-1024x767.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+/* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+height: 600px;
+}
+/* .ipstatus{
+border: none;
+background-color: transparent;
+color: black;
+
+}
+.ipstatus:focus{
+    background-color: transparent;
+    border: none;
+    }
+     */
+     .er{
+         color: red;
+     }

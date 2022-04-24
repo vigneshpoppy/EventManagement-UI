@@ -1,0 +1,37 @@
+<!-- <p>updateevent works!</p> -->
+
+<label style="margin-left: 60px; width: 100px;">Enter Id</label>
+<input type="number" name="id" [(ngModel)]="id">
+<button (click)="search()"class="btn-secondary" >search</button>
+
+<div class="card">
+  <h4>Update-Event</h4>
+  <hr>
+<form #addevent="ngForm" (ngSubmit)="savechanges(addevent.value)">
+    <label>Enter Event ID</label> 
+        <input type="text" name="eventid" ngModel  [(ngModel)]="eventid"/>
+            <br/>
+        <label> Enter EventName </label>
+        <input type="text" name="name" ngModel [(ngModel)]="name" />
+        <br/>
+        <label>Enter  Date: </label>
+       
+        <input type="date"  name="date" ngModel [(ngModel)]="date"/>   <br/>
+        <label>Location: </label>
+        <input type="text"  name="location"  ngModel [(ngModel)]="location"/>   <br/>
+        <label>Duration: </label>
+        <input type="text"  name="duration"  ngModel [(ngModel)]="duration"/>   <br/>
+        <label>Amount: </label>
+        <input type="number"  name="amount"  ngModel [(ngModel)]="amount"/>   <br/>
+        <label>Description: </label>
+        <input type="text"  name="description"  ngModel [(ngModel)]="description"/>   <br/>
+        <label>Speaker id: </label>
+        <input type="text"  name="speakerid"  ngModel [(ngModel)]="speakerid"/>   <br/>
+        <label>Speaker Name: </label>
+        <input type="text"  name="speakername"  ngModel [(ngModel)]="speakername"/>   <br/>
+        <label>Enter Contact Number: </label>
+        <input type="text"  name="contactnumber" ngModel [(ngModel)]="contactnumber"/>   <br/>
+
+      <button type="submit" class="btn-success">Update Event</button>
+        </form>
+    </div>

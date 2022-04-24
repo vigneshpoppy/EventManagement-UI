@@ -1,0 +1,83 @@
+<!-- <p>participant-login works!</p>
+
+<div>
+    <h1>Participant-Login</h1>
+    <button (click)="enter()">enter</button> 
+    <form #regisform="ngForm" (ngSubmit)=" ValidateRegistration(regisform.value)" novalidate>
+      
+      
+        <div class="form-group">
+        <label>Enter Email</label>
+        <input type="text" name="email" #email="ngModel" ngModel  required/>
+        <div class="er" *ngIf="regisform.submitted &&  email.invalid" > 
+            <div class="er"*ngIf="email.errors?.required"> Email Name is required</div>
+        </div>
+    </div>
+
+        <br/>
+        <div class="form-group">
+        <label>Enter Password</label>
+        <input type="text" name="pwd" #pwd="ngModel" ngModel minlength="6" required/>
+        <div class="er" *ngIf="regisform.submitted &&  pwd.invalid" > 
+            <div class="er" *ngIf="pwd.errors?.required"> Password is required</div>
+        </div>
+        <div *ngIf="pwd.errors?.minlength">
+            Name must be at least 6 characters long.
+          </div>
+
+    </div>
+        
+        <br/>
+         <div class="form-group">
+        <input type="submit" class="btn btn-primary" value="login" name="reg"/>
+
+    </div>
+
+
+    </form> -->
+
+    <div class="main">
+        <div class="container">
+            <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+            <div class="card-body">
+            <h5 class="card-title text-center"> Participant Log-In</h5>
+            <form class="form-signin" #regisform="ngForm" (ngSubmit)=" ValidateRegistration(regisform.value)" novalidate >
+                <div class="form-group">
+                    <label class="label1">Enter User Id</label>
+                    <input class="ip" type="text" name="email" #email="ngModel" ngModel  required/>
+                    <div class="er" *ngIf="regisform.submitted &&  email.invalid" > 
+                        <div class="er"*ngIf="email.errors?.required"> user id is required</div>
+                    </div>
+                </div>
+                    <br/>
+                    <div class="form-group">
+                        <label  class="label">Enter Password</label>
+                        <input class="ip" type="password" name="pwd" #pwd="ngModel" ngModel minlength="6" required/>
+                        <div class="er" *ngIf="regisform.submitted &&  pwd.invalid" > 
+                            <div class="er" *ngIf="pwd.errors?.required"> Password is required</div>
+                        </div>
+                        <div *ngIf="pwd.errors?.minlength">
+                            Password must be at least 6 characters long.
+                            </div>
+                
+                    </div>
+                        
+                        <br/>
+                        <div class="form-group">
+                            <input type="submit"class="btn" class="btn btn-primary" value="login" name="reg"/>
+                            <br>
+                            
+                            <input (click)="updatepasswordirect()" type="button" style="width: 160px;" class=" btn1 btn-primary" value="forgot password"/>
+                            <input (click)="dashboard()" type="button" style="width: 160px;" class=" btn1 btn-primary" value="Go to Dashboard"/>
+                        </div>
+                    
+            
+            </form>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+</div>

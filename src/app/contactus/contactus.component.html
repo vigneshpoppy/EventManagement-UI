@@ -1,0 +1,18 @@
+<div class="main">
+<div class="container">
+    <div class="card-body">
+    <div class="cardbody">
+    <h1 style="margin-left: 120px; ;">Contact Us</h1>
+    <form #send="ngForm" (ngSubmit)="sendform(send.value)" novalidate >
+        <label> Email:</label>
+        <input type="text" name="email" ngModel ><br>
+        <label> Contact Number:</label>
+        <input type="number" name="cnumber" ngModel><br>
+        <label> Comment:</label>
+        <textarea class="ip" type="text" style="height: 100px; width: 400px; margin-left: 50px;" name="comment" ngModel></textarea><br>
+        <input type="submit" style="margin-left: 130px;" class="btn-primary" name="submit" value="Submit"> 
+    </form>
+</div>
+</div>
+</div>
+</div>

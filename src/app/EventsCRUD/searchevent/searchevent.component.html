@@ -1,0 +1,40 @@
+<!-- <p>searchevent works!</p> -->
+<div>
+<label>Enter Id</label>
+<input type="number" name="id" [(ngModel)]="id">
+<button (click)="search()" class="btn-secondary">search</button>
+<hr>
+<!-- <div class="card">
+    <div>
+        <h2>{{data.name}}</h2>
+        <h3>{{data.eventid}}</h3>
+    </div>
+    <hr>
+    <h2>Amount:{{data.amount}}</h2>
+    <h4>Date:{{data.date}}<span>Location:{{data.location}}</span></h4>
+    <h5>Description: {{data.description}}</h5>
+    <P>Host:{{data.speakername}}</P><br>
+    <P>Host ID:{{data.speakeremail}}</P>
+    <p>Contact Number:{{data.contactnumber}}</p>
+</div> -->
+
+<div class="cardcontainer">
+    <div style="font-family: sans-serif;" class="card" style="width: 50rem; height: 25rem;" >
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h2 class="card-title">{{data.name}}</h2>
+          <h3 class="card-subtitle " >{{data.eventid}}</h3>
+          <h3 class="card-text">Amount:{{data.amount}}</h3>
+          <h4 class="card-text">Date:{{data.date}}&nbsp;&nbsp;&nbsp;</h4>
+          <h4><span>Location:{{data.location}}</span></h4>
+          <h4 class="card-text">Duration:{{data.duration}} Hrs</h4>
+          <p class="card-text">Description: {{data.description}}</p>
+          <hr>
+          <h4 class="card-text">Host:{{data.speakername}}</h4><br>
+        <P class="card-text">Host ID:{{data.speakeremail}}&nbsp;&nbsp;&nbsp; Contact Number:{{data.contactnumber}}</P>
+        <p class="card-text"></p>
+          <!-- //<a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div>
+    </div>
+</div>

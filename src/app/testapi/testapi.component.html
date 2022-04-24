@@ -1,0 +1,18 @@
+<p>testapi works!</p>
+<button (click)="search()">getbyid</button>
+<input type="number"name="id"[(ngModel)]="id">
+<button (click)="delete()">delete</button>
+<form #addevent="ngForm" (ngSubmit)="add(addevent.value)">
+    <label>Enter event ID</label>
+        <input type="number" name="eventid" ngModel [(ngModel)]="eventid"/>
+            <br/>
+        <label>Company Name: </label>
+        <input type="text" name="eventname" ngModel [(ngModel)]="eventname" />
+        <br/>
+        <label>amount: </label>
+        <input type="number"  name="eventname" ngModel [(ngModel)]="amount"/>
+        
+        <input type="submit" value="Add Supplier"  />
+        </form>
+        
+<!-- <button (click)="add()"> add </button> -->

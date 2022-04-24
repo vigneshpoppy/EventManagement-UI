@@ -1,0 +1,34 @@
+<!-- <p>search-speaker works!</p> -->
+<div>
+    <label style="font-family: sans-serif; font-weight: bold;">Enter Id</label>
+    <input type="text" name="id" [(ngModel)]="id">
+    <button (click)="search()" class=" btn-secondary" >search</button>
+    <hr>
+    <!-- <div class="card" >
+        <div>
+            <h2>speakername:{{data.name}}</h2>
+            <h4>speakerid:{{data.speakeremailid}}</h4>
+            <h4>Password:{{data.password}}</h4>
+        </div>
+        <hr>
+        <h5>Skills:{{data.skills}}</h5>
+        <h5>Date:{{data.contactnumber}}</h5>
+        
+    </div>
+    </div> -->
+    <div class="cardcontainer">
+        <div class="card" style="width: 50rem; height: 20rem;">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+              <h2 class="card-title">speakername:{{data.name}}</h2>
+              <h3 class="card-subtitle">speakerid:{{data.speakeremailid}}</h3>
+              <h3 class="card-text">Password:{{data.password}}</h3>
+              <h4 class="card-text">Skills:{{data.skills}}</h4>
+             
+              <p class="card-text">Contactnumber:{{data.contactnumber}}</p>
+              
+              <hr>
+            </div>
+          </div>
+        </div>
+   </div>

@@ -1,0 +1,62 @@
+
+
+<nav  class="navcont">
+  <button> <a routerLink="eventcrud">Event Administration</a></button>
+<button><a routerLink="speakercrud">Speaker Administration</a></button>
+<h1 >Live  Participant:{{count}}</h1>
+
+    <!-- <a routerLink="showallevent">show-all-events</a>
+    <a routerLink="searchevent">searchevent</a>
+    <a routerLink="deleteevent">deleteevent</a>
+    <a routerLink="createevent">createevent</a> -->
+
+<!-- <button> <a routerLink="showallspeaker">show-allspeaker</a></button>
+<button><a routerLink="searchspeaker">search-speaker</a></button>
+<button><a routerLink="createspeaker">create-speaker</a></button>
+<button><a routerLink="deletespeaker">delete-speaker</a></button>
+<button><a routerLink="updatespeaker">update-speaker</a></button>
+<button><a routerLink="adminfeedback">View Feedback</a></button> -->
+
+
+    <!-- <ul>
+        <li> <a routerLink="showallevent">show-all-events</a></li>
+        <li><a routerLink="searchevent">search-events</a></li>
+        <li><a routerLink="createevent">create-event</a></li>
+        <li><a routerLink="deleteevent">delete-event</a></li>
+        <li><a routerLink="updateevent">update-event</a></li>
+      </ul>
+      <ul>
+        <li> <a routerLink="showallspeaker">show-allspeaker</a></li>
+        <li><a routerLink="searchspeaker">search-speaker</a></li>
+        <li><a routerLink="createspeaker">create-speaker</a></li>
+        <li><a routerLink="deletespeaker">delete-speaker</a></li>
+        <li><a routerLink="updatespeaker">update-speaker</a></li>
+        <li><a routerLink="adminfeedback">View Feedback</a></li>
+      </ul> -->
+    
+</nav>
+<p></p>
+
+<button class="btn" (click)="logout()" class="btn btn-danger">logout </button><span>  </span>
+<button class="btn" (click)="viewfeedback()" class="btn btn-primary"><a style="text-decoration: none ;color: white;" routerLink="adminfeedback">View Feedback</a></button>
+<label class="label">Email</label>
+<input class="ip" type="text" [(ngModel)]="originalemail"><label class="label">Body</label><textarea class="ip" [(ngModel)]="body"></textarea>
+<button class="btn" type="button"class="btn btn-success" (click)="sendemail()" value="sendemail">Send Email</button>
+<!-- <input type="buttton" > -->
+<button class="btn" type="button" class="btn-primary" (click)="promotioncode()" >Generate Code</button>
+<p> Promotional Code:{{code}}</p>
+<!-- <div>
+  <div style="display: block">
+    <canvas baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [chartType]="barChartType">
+    </canvas>
+  </div>
+</div> -->
+
+<router-outlet>
+
+</router-outlet>
